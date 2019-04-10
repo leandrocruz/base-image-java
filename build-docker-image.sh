@@ -1,1 +1,1 @@
-docker build -t dogma-base-java-11:v1.0 .
+docker build -t base-image-java:v11.0 .

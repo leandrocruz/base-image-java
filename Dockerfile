@@ -7,8 +7,6 @@ RUN apt-get install -y openjdk-11-jre-headless python tree jed curl wget unzip t
 RUN apt-get clean
 RUN rm -rf /tmp/* /var/tmp/*
 
-RUN ln -fs /usr/share/zoneinfo/America/Toronto /etc/localtime && printf 'America\nSao_Paulo\n' | dpkg-reconfigure tzdata
-
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
